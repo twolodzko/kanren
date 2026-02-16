@@ -38,9 +38,13 @@ Only the minimal subset of kanren was implemented. This includes the following f
 * `fail` is a goal that always fails.
 
 The language is fully specified and explained in the great *The Reasoned Schemer* book. The code is tested using 
-an integration test that runs all the relevant examples from the book.
+an integration test that runs [all the relevant examples from the book].
+
+When called with `-debug` flag, the interpreter prints detailed debugging information, that can be used for
+understanding kanren's execution.
 
 [gosch]: https://github.com/twolodzko/gosch
 [byrd09]: https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/27f1ebb8-5114-4fa5-b598-dcfaddfd6af5/content
 [byrd06]: http://scheme2006.cs.uchicago.edu/12-byrd.pdf
 [unify]: https://www.cs.bu.edu/fac/snyder/publications/UnifChapter.pdf
+[all the relevant examples from the book]: https://github.com/miniKanren/TheReasonedSchemer
