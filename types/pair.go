@@ -33,7 +33,6 @@ func (p Pair) Len() int {
 	var len int
 	var head any = p
 	for {
-		len++
 		switch p := head.(type) {
 		case Pair:
 			head = p.Next
@@ -42,6 +41,7 @@ func (p Pair) Len() int {
 		default:
 			return len + 1
 		}
+		len++
 	}
 }
 
